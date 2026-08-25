@@ -72,7 +72,9 @@ if __name__ == "__main__":
     # Output to verify the structure of the inverted tree
 
 
-# I use recursion to invert the tree in place. For each node, I swap its left and right children, then recursively invert the new left and right subtrees. If the current node is `None`, I return `None`. Finally, I return the root because the tree has been modified in place. The time complexity is O(n) because every node is visited once. The space complexity is O(h), where h is the height of the tree, because of the recursive call stack.
+# I use recursion to invert the tree in place. For each node, I swap its left and right children, then recursively invert the new left and right subtrees. 
+# If the current node is `None`, I return `None`. Finally, I return the root because the tree has been modified in place. 
+# e time complexity is O(n) because every node is visited once. The space complexity is O(h), where h is the height of the tree, because of the recursive call stack.
 
 
 # # ---
