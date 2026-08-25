@@ -83,7 +83,10 @@ if __name__ == "__main__":
         print(current.val, end=" -> " if current.next else "\n")
         current = current.next
 
-# I use two linked lists. The first contains nodes with values less than `x`, and the second contains nodes with values greater than or equal to `x`. I use dummy nodes to simplify handling the heads of both lists. I traverse the original list once and append each node to the appropriate list, which also preserves the original relative order. Finally, I terminate the second list with `None`, connect the end of the first list to the second list, and return the head of the first list. The time complexity is O(n) because I visit every node once, and the extra space complexity is O(1) because I reuse the existing nodes and only create two dummy nodes.
+# I use two linked lists. The first contains nodes with values less than `x`, and the second contains nodes with values greater than or equal to `x`. I use dummy nodes to simplify handling the heads of both lists. 
+# I traverse the original list once and append each node to the appropriate list, which also preserves the original relative order. 
+# Finally, I terminate the second list with `None`, connect the end of the first list to the second list, and return the head of the first list. 
+# The time complexity is O(n) because I visit every node once, and the extra space complexity is O(1) because I reuse the existing nodes and only create two dummy nodes.
 
 # ---
 
