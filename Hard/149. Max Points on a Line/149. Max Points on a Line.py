@@ -103,3 +103,25 @@ if __name__ == "__main__":
 # I use GCD to reduce the `(dy, dx)` pair so equivalent slopes have the same representation. 
 # I also normalize the sign and handle vertical lines separately. Duplicate points are counted separately 
 # because they don't have a valid slope. Finally, I add the duplicate count to the most frequent slope count.
+
+
+
+# ---
+# OR
+# class Solution:
+#     def maxPoints(self, points: List[List[int]]) -> int:
+#         res = 1
+#         for i in range(len(points)):
+#             p1 = points[i]
+#             count = defaultdict(int)
+#             for j in range(i + 1, len(points)):
+#                 p2 = points[j]
+#                 if p1[0] == p2[0]:
+#                     slope = float('inf')
+#                 else:
+#                     slope = (p2[1] - p1[1]) / (p2[0] - p1[0])
+
+#                 count[slope] += 1
+#                 res = max(res, count[slope] + 1)
+
+#         return res
