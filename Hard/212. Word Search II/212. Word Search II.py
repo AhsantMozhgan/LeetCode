@@ -105,7 +105,10 @@ if __name__ == "__main__":
     result = solution.findWords(board, words)
     print(result)  # Expected output: ["eat", "oath"]
 
-# I first build a Trie containing all the words. Then I run DFS from every cell on the board. During DFS, I simultaneously traverse the board and the Trie. If the current character doesn't exist in the current Trie node, I stop exploring that path because no word can be formed from that prefix. If the Trie node contains a complete word, I add it to the result and delete the word from the Trie to avoid duplicates. I temporarily mark each board cell as visited, explore the four directions, and then restore the cell during backtracking.
+# I first build a Trie containing all the words. Then I run DFS from every cell on the board. During DFS, I simultaneously traverse the board and the Trie. 
+# If the current character doesn't exist in the current Trie node, I stop exploring that path because no word can be formed from that prefix. 
+# If the Trie node contains a complete word, I add it to the result and delete the word from the Trie to avoid duplicates.
+#  I temporarily mark each board cell as visited, explore the four directions, and then restore the cell during backtracking.
 
 
 # ---
