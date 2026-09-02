@@ -88,7 +88,9 @@ if __name__ == "__main__":
 
     print_list(merged_head)  # Output: 1 -> 1 -> 2 -> 3 -> 4 -> 4 -> 5 -> 6 -> None
 
-# I use divide and conquer to merge the k sorted linked lists efficiently. I recursively divide the list of linked lists into two halves until only one list remains. Then I merge the two sorted halves using the standard two-pointer merge technique. This gives us O(n log k) time, where n is the total number of nodes and k is the number of lists. The merge itself uses O(1) extra space because I reuse the existing nodes, while the recursion uses O(log k) space.
+# I use divide and conquer to merge the k sorted linked lists efficiently. I recursively divide the list of linked lists into two halves until only one list remains. 
+# Then I merge the two sorted halves using the standard two-pointer merge technique. This gives us O(n log k) time, where n is the total number of nodes and k is the number of lists. 
+# The merge itself uses O(1) extra space because I reuse the existing nodes, while the recursion uses O(log k) space.
 
 # ---
 # OR
